@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <title>Status of Stock</title>
+    <script src="node_modules/@chirimen-raspi/polyfill/polyfill.js"></script>
+    <script src="node_modules/@chirimen/vl53l0x/index.js"></script>
+    <script src="./Range.js" defer></script>
+    <script src="./Re;Range.js" defer></script>
+    <script src="./Servotest.js" defer></script>
+    <script src="./GarbageClac.js" defer></script>
+    <style>
+        table,
+        p {
+            color: blue;
+            text-align: left;
+            font-size: 24px;
+        }
+
+        img {
+            position: absolute;
+            top: 50px;
+            right: 0px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="head">距離</p>
+    <img src="schematic.png" width="400" />
+    <table>
+        <tr>
+            <td>Default Distance[mm]</td>
+            <td id="Ddist"></td>
+        </tr>
+        <tr>
+            <td>Distance[mm]</td>
+            <td id="dist"></td>
+        </tr>
+        <tr>
+            <td>Angle [rd]</td>
+            <td id = "AngleID"></td>
+        </tr>
+        <tr>
+            <td>Garbage [mm]</td>
+            <td id = "Garb"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
